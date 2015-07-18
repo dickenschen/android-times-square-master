@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.squareup.timessquare.CalendarRowView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+  <com.squareup.timessquare.CalendarCellView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/CalendarCell.CalendarDate"
+      />
+</com.squareup.timessquare.CalendarRowView><!-- From: file:/D:/Users/dickens/AndroidStudioProjects/android-times-square-master/library/src/main/res/layout/week.xml --><!-- From: file:/D:/Users/dickens/AndroidStudioProjects/android-times-square-master/sample/build/intermediates/exploded-aar/android-times-square-master/library/unspecified/res/layout/week.xml -->

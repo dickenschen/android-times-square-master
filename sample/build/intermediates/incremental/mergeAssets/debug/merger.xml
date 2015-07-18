@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="D:\Users\dickens\AndroidStudioProjects\android-times-square-master\sample\build\intermediates\exploded-aar\android-times-square-master\library\unspecified\assets"/></dataSet><dataSet config="main"><source path="D:\Users\dickens\AndroidStudioProjects\android-times-square-master\sample\src\main\assets"/></dataSet><dataSet config="debug"><source path="D:\Users\dickens\AndroidStudioProjects\android-times-square-master\sample\src\debug\assets"/></dataSet></merger>

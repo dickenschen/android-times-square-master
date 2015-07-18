@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Users\dickens\AndroidStudioProjects\android-times-square-master\sample\build\intermediates\exploded-aar\android-times-square-master\library\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="38eb88fac7012a8d6b617b83c8582ba34b2a8ba0">
+        <dex dex="D:\Users\dickens\AndroidStudioProjects\android-times-square-master\sample\build\intermediates\pre-dexed\debug\classes-793d40fbdef40d7daf1902ec0296bbb7d69d5cad.jar" />
+    </item>
+
+</items>
