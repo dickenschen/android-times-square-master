@@ -9,9 +9,13 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.squareup.timessquare.CalendarPickerView;
 import com.squareup.timessquare.CalendarPickerView.SelectionMode;
+import com.squareup.timessquare.MonthView;
+
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -19,10 +23,11 @@ import java.util.Date;
 import static android.widget.Toast.LENGTH_SHORT;
 
 public class SampleTimesSquareActivity extends Activity {
-  private static final String TAG = "SampleTimesSquareActivity";
+  private static final String TAG = "TimesSquareActivity";
   private CalendarPickerView calendar;
   private AlertDialog theDialog;
   private CalendarPickerView dialogView;
+  private MonthView  monthView;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +45,21 @@ public class SampleTimesSquareActivity extends Activity {
         .inMode(SelectionMode.SINGLE) //
         .withSelectedDate(new Date());
 
+
+
+    DateFormat fullDateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+    final TextView text = (TextView) findViewById(R.id.textView);
+    text.setText(String.valueOf(fullDateFormat.format(calendar.getSelectedDate().getTime())));
+
+    DateSelectedListener listener = new DateSelectedListener(text);
+    calendar.setOnDateSelectedListener(listener);
+
     final Button single = (Button) findViewById(R.id.button_single);
     final Button multi = (Button) findViewById(R.id.button_multi);
     final Button range = (Button) findViewById(R.id.button_range);
     final Button displayOnly = (Button) findViewById(R.id.button_display_only);
     final Button dialog = (Button) findViewById(R.id.button_dialog);
+
     single.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
@@ -163,5 +178,21 @@ public class SampleTimesSquareActivity extends Activity {
         }
       });
     }
+  }
+
+  private class DateSelectedListener implements CalendarPickerView.OnDateSelectedListener{
+    private TextView m_textView;
+    DateSelectedListener(TextView textView){
+      m_textView=textView;
+    }
+
+    @Override public void onDateSelected(Date date){
+      DateFormat fullDateFormat = DateFormat.getDateInstance(DateFormat.MEDIUM);
+      m_textView.setText(String.valueOf(fullDateFormat.format(date.getTime())));
+    };
+
+    @Override public void onDateUnselected(Date date){
+
+    };
   }
 }
